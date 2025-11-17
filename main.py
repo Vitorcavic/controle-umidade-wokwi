@@ -65,7 +65,7 @@ isWifiConnected = False
 
 if connect_wifi():
     send_telegram("🔔 HumiSense Iniciado!\nSistema de monitoramento ativo e funcionando! ✅")
-    flag = True
+    isWifiConnected = True
 else:
     print("ERRO NO WIFI")
 
